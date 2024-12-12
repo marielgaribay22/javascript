@@ -1,0 +1,31 @@
+@use './vendor/normalize';
+@use './partials/colors';
+@use './partials/mixins';
+@use './partials/typography';
+@use './partials/base';
+
+
+// Your css styles code for the assignment goes bellow
+
+.full-menu {
+  display: none;
+  background-color: #ffa500cc; 
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;  
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
+  transition: 0.3s;  
+}
+
+
+.show {
+  display: flex;
+}
+
+.full-menu.show {
+  display: block;
+}
